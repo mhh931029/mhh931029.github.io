@@ -21,17 +21,17 @@
     
     
     <meta name="keywords" content>
-    <meta name="description" content="javascirpt中的数字在计算机内存储为多少Byte？1234A. 2byteB. 4byteC. 8byteD. 16byte  正确答案: C 代码输出结果为:var myObject = {  foo:”bar”,  func:function(){    var self = this;    console.log(this.foo);    console.log(self.foo">
+    <meta name="description" content="javascirpt中的数字在计算机内存储为多少Byte？1234A. 2byteB. 4byteC. 8byteD. 16byte  正确答案: C 代码输出结果为:12345678910111213141516171819var myObject = &amp;#123;  foo:&quot;bar&quot;,  func:function()&amp;#123;    var self = this;    console">
 <meta property="og:type" content="article">
 <meta property="og:title" content="面试内容">
 <meta property="og:url" content="http://www.mahaohua.com/2019/06/06/面试内容/index.html">
 <meta property="og:site_name" content="会跳舞的绵羊">
-<meta property="og:description" content="javascirpt中的数字在计算机内存储为多少Byte？1234A. 2byteB. 4byteC. 8byteD. 16byte  正确答案: C 代码输出结果为:var myObject = {  foo:”bar”,  func:function(){    var self = this;    console.log(this.foo);    console.log(self.foo">
+<meta property="og:description" content="javascirpt中的数字在计算机内存储为多少Byte？1234A. 2byteB. 4byteC. 8byteD. 16byte  正确答案: C 代码输出结果为:12345678910111213141516171819var myObject = &amp;#123;  foo:&quot;bar&quot;,  func:function()&amp;#123;    var self = this;    console">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-06T09:43:34.272Z">
+<meta property="og:updated_time" content="2019-06-06T09:46:14.839Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="面试内容">
-<meta name="twitter:description" content="javascirpt中的数字在计算机内存储为多少Byte？1234A. 2byteB. 4byteC. 8byteD. 16byte  正确答案: C 代码输出结果为:var myObject = {  foo:”bar”,  func:function(){    var self = this;    console.log(this.foo);    console.log(self.foo">
+<meta name="twitter:description" content="javascirpt中的数字在计算机内存储为多少Byte？1234A. 2byteB. 4byteC. 8byteD. 16byte  正确答案: C 代码输出结果为:12345678910111213141516171819var myObject = &amp;#123;  foo:&quot;bar&quot;,  func:function()&amp;#123;    var self = this;    console">
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
@@ -195,8 +195,7 @@
             <h3 id="javascirpt中的数字在计算机内存储为多少Byte？"><a href="#javascirpt中的数字在计算机内存储为多少Byte？" class="headerlink" title="javascirpt中的数字在计算机内存储为多少Byte？"></a>javascirpt中的数字在计算机内存储为多少Byte？</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">A. 2byte</span><br><span class="line">B. 4byte</span><br><span class="line">C. 8byte</span><br><span class="line">D. 16byte</span><br></pre></td></tr></table></figure>
 
 <p>正确答案: <a href="#">C</a></p>
-<h3 id="代码输出结果为"><a href="#代码输出结果为" class="headerlink" title="代码输出结果为:"></a>代码输出结果为:</h3><p>var myObject = {<br>  foo:”bar”,<br>  func:function(){<br>    var self = this;<br>    console.log(this.foo);<br>    console.log(self.foo);<br>    (function(){<br>      console.log(this.foo);<br>      console.log(self.foo);<br>    })<br>  }<br>};<br>myObject.func();</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">A. bar bar bar bar</span><br><span class="line">B. bar bar bar undefined</span><br><span class="line">C. bar bar undefined bar </span><br><span class="line">D. undefined bar undefined bar</span><br></pre></td></tr></table></figure>
+<h3 id="代码输出结果为"><a href="#代码输出结果为" class="headerlink" title="代码输出结果为:"></a>代码输出结果为:</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">var myObject = &#123;</span><br><span class="line">  foo:<span class="string">"bar"</span>,</span><br><span class="line">  func:<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">    var self = this;</span><br><span class="line">    console.log(this.foo);</span><br><span class="line">    console.log(self.foo);</span><br><span class="line">    (<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">      console.log(this.foo);</span><br><span class="line">      console.log(self.foo);</span><br><span class="line">    &#125;())</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line">myObject.func();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">A. bar bar bar bar</span><br><span class="line">B. bar bar bar undefined</span><br><span class="line">C. bar bar undefined bar </span><br><span class="line">D. undefined bar undefined bar</span><br></pre></td></tr></table></figure>
 
 <p>正确答案: <a href="#">C</a></p>
 
@@ -207,7 +206,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2019-06-06T09:43:34.272Z" itemprop="dateUpdated">2019-06-06 17:43:34</time>
+    Last updated: <time datetime="2019-06-06T09:46:14.839Z" itemprop="dateUpdated">2019-06-06 17:46:14</time>
 </span><br>
 
 
